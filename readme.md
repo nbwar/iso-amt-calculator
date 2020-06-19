@@ -1,5 +1,5 @@
 
-# How much is your Alternative Minimum Tax?
+# How Much Alternative Minimum Tax Burden Does Your ISO Exercise Create?
 
 If you exercise Incentive Stock Options ("ISOs"), you may be subject to Alternative Minimum Tax ("AMT"). AMT is a parallel tax system imposed on an alternative, more comprehensive measure of income, which includes the unrealized gains of ISO value, with fewer opportunities for deductions. If the calculated AMT exceeds the ordinary income tax, then the AMT amount is used.
 
@@ -54,8 +54,3 @@ The rate on the left applies to income from that row to the one beneath it. For 
 - [How To Calculate AGI For Tax Purposes (Investopedia)](http://www.investopedia.com/financial-edge/0312/how-to-calculate-agi-for-tax-purposes.aspx)
 - [The AMT Exemption (AMT Advisor)](http://amtadvisor.com/AMT_Exemption.html)
 - [2018 Tax Brackets (Tax Foundation)](https://taxfoundation.org/2018-tax-brackets/)
-
-## License
-
-MIT.
-
