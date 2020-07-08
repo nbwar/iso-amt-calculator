@@ -114,7 +114,7 @@
 		tax += (inc - ord[keys[i]]) * num(keys[i]) / 100
 		i--;
 		while (i >= 0) {
-			tax += ord[keys[i + 1]] * num(keys[i]) / 100
+			tax += (ord[keys[i + 1]] - ord[keys[i]]) * num(keys[i]) / 100
 			i--;
 		}
 
@@ -168,11 +168,11 @@
 	// Send outputs to HTML elements.
 	function updateHtml() {
 		document.getElementById('bargainElement').innerText = numberFormat(bargainElement, ',');
-		document.getElementById('amti').innerText = numberFormat(amti, ','); 
-		document.getElementById('amtexemption').innerText = numberFormat(amtexemption, ','); 
-		document.getElementById('amtbase').innerText = numberFormat(amtbase, ','); 
-		document.getElementById('amt').innerText = numberFormat(amt, ','); 
-		document.getElementById('ordinaryTax').innerText = numberFormat(ordinaryTax, ','); 
+		document.getElementById('amti').innerText = numberFormat(amti, ',');
+		document.getElementById('amtexemption').innerText = numberFormat(amtexemption, ',');
+		document.getElementById('amtbase').innerText = numberFormat(amtbase, ',');
+		document.getElementById('amt').innerText = numberFormat(amt, ',');
+		document.getElementById('ordinaryTax').innerText = numberFormat(ordinaryTax, ',');
 		document.getElementById('income-output').innerText = document.getElementById('income').value;
 		document.getElementById('payable-tax').innerText = numberFormat(payableTax, ',');
 		if (amt > ordinaryTax) {
@@ -265,7 +265,7 @@
 	/**
 	 * Remove class once.
 	 */
-	
+
 	function removeClass(el, c) {
 		if (el.classList.contains(c)) return el.classList.remove(c);
 	}
